@@ -1,0 +1,81 @@
+repo: 'volunteer-form'
+canvasCourse: 'web-dev-2'
+
+naming: true
+restrictFileTypes: true
+liveWebsite: true
+
+git:
+  numCommits: 4
+  allCommitted: true
+  allSynced: true
+
+html:
+  - path: 'index.html'
+    valid: true
+    bestPractices: true
+    outline: true
+    has:
+      - ['link[href*="Droid+Serif"]', 'The Google Font, `Droid Serif` (regular, italic & bold) is missing']
+      - ['link[href*="modules.css"] + link[href*="grid.css"]', 'The `modules.css` file must come before the `grid.css` file']
+      - ['link[href*="grid.css"] + link[href*="type.css"]', 'The `grid.css` file must come before the `type.css` file']
+      - ['link[href*="type.css"] + link[href*="main.css"]', 'The `type.css` file must come before the `main.css` file']
+      - 'header h1'
+      - 'footer'
+      - 'fieldset'
+      - 'legend'
+      - 'label[for]'
+      - 'input[id][name]'
+      - 'button[type="submit"]'
+      - 'select[id]'
+      - 'select > option'
+      - ['select > option[value=""]:first-child', 'The first `<option>` inside the `<select>` menus should have an empty value: `value=""`']
+      - 'textarea[id]'
+      - '.grid > .unit'
+      - 'hr'
+      - '[class*="xs-"]'
+      - '[class*="s-"]'
+      - '[class*="m-"]'
+      - '[class*="gutter"]'
+      - '[class*="pad"]'
+      - '[class*="push"]'
+      - 'input[type="email"]'
+      - 'input[type="tel"]'
+      - 'input[type="date"]'
+      - 'input[type="radio"] + label'
+      - 'input[type="checkbox"] + label'
+    search:
+      - 'Personal details'
+      - 'Full name'
+      - 'Elizabeth'
+      - '“Liz”'
+      - 'Date of birth'
+      - 'Straight-cut: XS'
+      - 'Phone number'
+      - 'City'
+      - 'Nunavut'
+      - 'activities are you interested'
+      - 'Digging holes'
+      - 'have any experience'
+      - 'hill climbing'
+      - 'ATVs'
+      - 'have up-to-date first-aid'
+      - 'comments or questions'
+      - 'micro|milli|kilo|mega|giga|tera|peta|exa|zetta|yotta'
+
+css:
+  - path: 'css/main.css'
+    valid: true
+    bestPractices: true
+    search:
+      - '#70ad55'
+      - '#fff'
+      - '#6e8c62'
+      - 'font-family:'
+      - 'color:'
+      - 'background-color:'
+      - 'border-color:'
+
+screenshots:
+  - path: 'index.html'
+    sizes: [320, 400, 608, 960, 1440]
