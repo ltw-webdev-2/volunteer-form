@@ -20,7 +20,7 @@ deliverables: '1 HTML file, 4 CSS files, images'
 
 ## Details
 
-- *Typefaces:* `Droid Serif`
+- *Typefaces:* `Noto Serif`
 - *Colours:* `#fff`, `#6e8c62`, `#70ad55`
 - *Gridifier settings:* defaults
 - *Typografier settings:* defaults

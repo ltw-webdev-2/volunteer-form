@@ -54,6 +54,8 @@ html:
 
 css:
   - path: 'css/main.css'
+    has:
+      - ['html', 'font-family', '"Noto Serif", serif']
     search:
       - '#70ad55'
       - '#fff'
